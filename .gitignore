@@ -1,0 +1,180 @@
+# ============================================================
+#  SKIN Disease Classifier — Root .gitignore
+# ============================================================
+
+# ------------------------------------------------------------
+# Python
+# ------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyo
+*.pyd
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Unit test / coverage
+htmlcov/
+.tox/
+.nox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+.pytest_cache/
+pytestdebug.log
+
+# Jupyter Notebooks checkpoints
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# Pyenv
+.python-version
+
+# mypy / pyright / ruff caches
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+.ruff_cache/
+
+# ------------------------------------------------------------
+# Virtual Environments
+# ------------------------------------------------------------
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ------------------------------------------------------------
+# ML / Dataset artefacts  (large binary files)
+# ------------------------------------------------------------
+
+# Raw image dataset (tens of thousands of images)
+dataset/HAM10000_images_part_1/
+dataset/HAM10000_images_part_2/
+
+# Preprocessed numpy arrays (can be regenerated)
+dataset/X_train.npy
+dataset/X_test.npy
+dataset/y_train.npy
+dataset/y_test.npy
+
+# Pixel-level CSV exports (can be regenerated)
+dataset/hmnist_28_28_L.csv
+dataset/hmnist_28_28_RGB.csv
+dataset/hmnist_8_8_L.csv
+dataset/hmnist_8_8_RGB.csv
+
+# Trained model weights
+models/*.keras
+models/*.h5
+models/*.ckpt
+models/*.ckpt.index
+models/*.ckpt.data-*
+models/*.pb
+models/saved_model/
+
+# Generated visualisations (can be regenerated)
+models/confusion_matrix.png
+models/training_curves.png
+models/gradcam_sample.png
+models/gradcam/
+
+# Scratch / temp model directory
+scratch/
+
+# ------------------------------------------------------------
+# Node / Frontend (React + Vite)
+# ------------------------------------------------------------
+frontend/node_modules/
+frontend/dist/
+frontend/dist-ssr/
+frontend/.env
+frontend/*.local
+
+# Build cache
+frontend/.vite/
+frontend/.cache/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ------------------------------------------------------------
+# Environment / Secrets
+# ------------------------------------------------------------
+.env
+.env.*
+!.env.example
+!frontend/.env.example
+*.secret
+secrets.json
+config/secrets.*
+
+# ------------------------------------------------------------
+# OS-generated files
+# ------------------------------------------------------------
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# ------------------------------------------------------------
+# IDEs & Editors
+# ------------------------------------------------------------
+.vscode/
+!.vscode/extensions.json
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.swp
+*~
+
+# ------------------------------------------------------------
+# Miscellaneous
+# ------------------------------------------------------------
+*.bak
+*.tmp
+*.temp

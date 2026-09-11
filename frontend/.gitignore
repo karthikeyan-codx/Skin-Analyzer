@@ -1,0 +1,57 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+node_modules
+dist
+dist-ssr
+*.local
+
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Dataset Images
+dataset/HAM10000_images_part_1/
+dataset/HAM10000_images_part_2/
+
+# Preprocessed Dataset
+dataset/X_train.npy
+dataset/X_test.npy
+dataset/y_train.npy
+dataset/y_test.npy
+
+# Trained Model
+models/skin_disease_model.keras
+
+# Other model files
+models/*.h5
+models/*.keras
+models/*.ckpt
+
+# Python
+__pycache__/
+*.pyc
+
+# Virtual Environment
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Generated Images
+models/training_curves.png
+models/confusion_matrix.png
