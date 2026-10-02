@@ -109,6 +109,8 @@ models/confusion_matrix.png
 models/training_curves.png
 models/gradcam_sample.png
 models/gradcam/
+models/*.csv
+models/*.json
 
 # Scratch / temp model directory
 scratch/
